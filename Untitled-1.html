@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Corretora Hozeni — Imóveis com parcelas acessíveis</title>
+</head>
+
+<body>
+    <div class="page">
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="logo" href="#">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <span>Corretora Hozeni</span>
+                </a>
+                <nav class="main-nav" aria-label="Menu principal">
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#imoveis">Imóveis</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container hero-grid">
+                    <div class="hero-content">
+                        <h1>Encontre o imóvel ideal com parcelas que cabem no seu bolso</h1>
+                        <p class="lead">Ajudamos você a conquistar sua casa própria com condições flexíveis e atendimento especializado.</p>
+
+                        <form id="lead-form" class="lead-form" onsubmit="event.preventDefault(); alert('Formulário enviado com sucesso!');">
+                            <label class="sr-only" for="name">Nome</label>
+                            <input id="name" name="name" type="text" placeholder="Nome completo" required>
+
+                            <label class="sr-only" for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="seu@email.com" required>
+
+                            <label class="sr-only" for="phone">Telefone</label>
+                            <input id="phone" name="phone" type="tel" placeholder="(99) 99999-9999">
+
+                            <button type="submit" class="btn-primary">Quero ser contactado</button>
+                        </form>
+                    </div>
+
+                    <div class="hero-media" aria-hidden="true">
+                        <img src="https://s2-g1.glbimg.com/bO_YTn3QHnzi7A8oqejcn7xb2wU=/0x0:1500x1001/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/f/Z/KTVkBTSSOxbSNUR1coGQ/mercado-imobiliario-aquecido.jpg" alt="Imóveis à venda">
+                    </div>
+                </div>
+            </section>
+
+            <section id="imoveis" class="features container">
+                <h2 class="section-title">Por que escolher a Hozeni?</h2>
+                <div class="cards">
+                    <article class="card">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <h3>Parcelas acessíveis</h3>
+                        <p>Planos pensados para caber no seu orçamento, com alternativas de financiamento e consórcios.</p>
+                    </article>
+
+                    <article class="card">
+                        <i class="fa-solid fa-user-check"></i>
+                        <h3>Atendimento personalizado</h3>
+                        <p>Consultores especializados para te acompanhar em todas as etapas da compra.</p>
+                    </article>
+
+                    <article class="card">
+                        <i class="fa-solid fa-building"></i>
+                        <h3>Portfólio diverso</h3>
+                        <p>Imóveis residenciais e comerciais em várias regiões com boas oportunidades.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <p>© <span id="year"></span> Corretora Hozeni — Todos os direitos reservados.</p>
+                <ul class="footer-links">
+                    <li><a href="#politica">Política de Privacidade</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
